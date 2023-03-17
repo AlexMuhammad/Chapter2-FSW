@@ -5,10 +5,11 @@ function sortCarByYearAscendingly(cars) {
   // Clone array untuk menghindari side-effect
   // Apa itu side effect?
   const result = [...cars];
+  let resultLength = result.length
 
   // Tulis code-mu disini
-  for (let i = 0; i < result.length; i++) {
-    for (let j = 0; j < (result.length - i - 1); j++) {
+  for (let i = 0; i < resultLength; i++) {
+    for (let j = 0; j < (resultLength - i - 1); j++) {
       if (result[j].year > result[j + 1].year) {
         let temp = result[j]
         result[j] = result[j + 1]
